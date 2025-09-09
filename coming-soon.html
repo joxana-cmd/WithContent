@@ -5,38 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Be content with your content — Coming soon | WithContent</title>
   <meta name="description" content="The missing bridge between briefs, clients, and CMS publishing. Coming soon." />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="WClogo_light.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/png" href="WClogo_dark.png"  media="(prefers-color-scheme: dark)">
+
   <style>
     :root{
-      --bg:#F9DDDC;           /* pale pink */
-      --brand:#5A8371;        /* green-grey */
+      --bg:#F9DDDC;
+      --brand:#5A8371;
       --brand-dark:#466559;
       --text:#111827;
       --muted:#4B4F56;
       --radius:12px;
-      --shadow:0 6px 18px rgba(16,24,40,.08);
+      --shadow:0 8px 24px rgba(16,24,40,.08);
+      --wrap:800px;
     }
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
-      margin:0; min-height:100%; display:flex; flex-direction:column; align-items:center;
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; color:var(--text);
-      background:var(--bg); text-align:center;
+      margin:0;
+      min-height:100%;
+      display:flex; flex-direction:column; align-items:center;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      text-align:center;
     }
     header{padding:28px 16px 8px}
-    .logo png{width:64px;height:64px;display:block;margin:0 auto}
-    .brand{font-weight:700;margin-top:8px}
-    main{padding:0 16px 24px}
-    h1{font-size:clamp(34px,7vw,56px); line-height:1.05; margin:22px 0 8px}
-    .desc{color:var(--muted); font-size:clamp(18px,3.6vw,20px); margin:6px 0 10px}
+    .logo img{width:64px; height:64px; display:block; margin:0 auto; border-radius:8px}
+    .brand{font-weight:700; margin-top:8px; font-size:20px}
+    main{padding:0 16px 32px; max-width:var(--wrap)}
+    h1{
+      font-size:clamp(34px,7vw,56px);
+      line-height:1.05;
+      margin:22px 0 36px; /* 🔹 More space under H1 */
+    }
+    .desc{
+      color:var(--muted);
+      font-size:clamp(18px,3.6vw,20px);
+      margin:6px 0 32px; /* 🔹 More space under text before CTA */
+    }
     h2{letter-spacing:2px; margin:16px 0 10px}
     .cta{
-      display:inline-block; padding:12px 22px; background:var(--brand); color:#fff; text-decoration:none;
-      border-radius:10px; font-weight:600; box-shadow:var(--shadow);
-      transition:background .25s ease, transform .12s ease
+      display:inline-block;
+      padding:14px 26px;
+      background:var(--brand);
+      color:#fff;
+      text-decoration:none;
+      border-radius:10px;
+      font-weight:600;
+      box-shadow:var(--shadow);
+      transition:background .25s ease, transform .12s ease;
+      font-size:16px;
     }
     .cta:hover{background:var(--brand-dark)}
     .cta:active{transform:translateY(1px)}
-    footer{margin-top:auto; padding:28px 16px; color:var(--muted); font-size:14px}
+    footer{
+      margin-top:auto;
+      padding:28px 16px;
+      color:var(--muted);
+      font-size:14px;
+    }
     footer a{color:var(--brand); text-decoration:none}
     footer a:hover{text-decoration:underline}
   </style>
@@ -44,18 +74,12 @@
 <body>
   <header>
     <div class="logo" aria-label="WithContent logo">
-      <!-- Inline placeholder leaf logo — replace with your final SVG when ready -->
-      <svg viewBox="0 0 64 64" role="img" aria-label="WithContent">
-        <defs>
-          <linearGradient id="leafGrad" x1="0" x2="1" y1="0" y2="1">
-            <stop offset="0" stop-color="#5A8371"/><stop offset="1" stop-color="#466559"/>
-          </linearGradient>
-        </defs>
-        <path d="M10 34c10-18 26-22 44-22-1 18-6 34-22 44C18 62 10 52 10 34Z" fill="url(#leafGrad)"/>
-        <path d="M22 38c8-8 18-14 28-16" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".85"/>
-      </svg>
-      <div class="brand">WithContent</div>
+      <picture>
+        <source srcset="WClogo_dark.png" media="(prefers-color-scheme: dark)">
+        <img src="WClogo_light.png" alt="WithContent logo" width="64" height="64" loading="eager" decoding="async">
+      </picture>
     </div>
+    <div class="brand">WithContent</div>
   </header>
 
   <main>
@@ -63,7 +87,7 @@
     <p class="desc">The missing bridge between briefs, clients, and CMS publishing.</p>
     <h2>COMING SOON</h2>
 
-    <p style="margin:16px 0 0">
+    <p style="margin-top:20px">
       <a href="index.html" class="cta">← Back to Main Page</a>
     </p>
   </main>
