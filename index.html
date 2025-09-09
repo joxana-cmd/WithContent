@@ -8,7 +8,7 @@
 
   <!-- Favicons -->
   <link rel="icon" type="image/png" href="WClogo_light.png" media="(prefers-color-scheme: light)">
-  <link rel="icon" type="image/png" href="WClogo_dark.png" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" href="WClogo_dark.png"  media="(prefers-color-scheme: dark)">
 
   <!-- Poppins font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -91,9 +91,32 @@
     .bullet{width:44px; height:44px; border-radius:50%; display:grid; place-items:center; background:var(--chip); font-size:20px;}
     .feature b{display:block; margin-bottom:6px; font-size:18px;}
 
-    .pipeline{display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:20px;}
-    .chip{padding:9px 14px; border-radius:999px; background:var(--chip); font-weight:600; color:#2b3b34;}
-    .chip.active{background:var(--chip-active); border:2px solid var(--brand);}
+    .pipeline {
+      display:flex;
+      gap:10px;
+      justify-content:center;
+      flex-wrap:wrap;
+      margin-top:20px;
+      align-items:center;
+    }
+    .chip {
+      padding:9px 14px;
+      border-radius:999px;
+      background:var(--chip);
+      font-weight:600;
+      color:#2b3b34;
+    }
+    .chip.active {
+      background:var(--chip-active);
+      border:2px solid var(--brand);
+    }
+    .arrow {
+      width:20px;
+      height:20px;
+      stroke:var(--muted);
+      stroke-width:2.5;
+      flex-shrink:0;
+    }
 
     .panel{
       background:var(--panel);
@@ -154,8 +177,15 @@
         <div class="feature"><div class="bullet">👥</div><div><b>Built for teams</b><div>Smooth collaboration between marketers, writers, and clients</div></div></div>
         <div class="feature"><div class="bullet">✅</div><div><b>Publish-ready</b><div>Push approved drafts straight into WordPress</div></div></div>
       </div>
+
       <div class="pipeline">
-        <span class="chip">Keyword</span><span class="chip active">Draft</span><span class="chip">Approval</span><span class="chip">CMS</span>
+        <span class="chip">Keyword</span>
+        <svg class="arrow" viewBox="0 0 24 24" fill="none"><path d="M8 4l8 8-8 8" /></svg>
+        <span class="chip active">Draft</span>
+        <svg class="arrow" viewBox="0 0 24 24" fill="none"><path d="M8 4l8 8-8 8" /></svg>
+        <span class="chip">Approval</span>
+        <svg class="arrow" viewBox="0 0 24 24" fill="none"><path d="M8 4l8 8-8 8" /></svg>
+        <span class="chip">CMS</span>
       </div>
     </section>
 
@@ -164,8 +194,8 @@
       <div class="h2" style="margin-top:0;">Proof from early users</div>
       <div class="quotes">
         <div class="q">“Cut our publishing cycle by 40%.”<br><small>— Agency CEO</small></div>
-        <div class="q">“No more chasing approvals.”<br><small>— Startup Founder</small></div>
-        <div class="q">“Feels like we doubled our team.”<br><small>— Marketing Lead</small></div>
+        <div class="q">“No more chasing approvals,”<br><small>— Startup Founder</small></div>
+        <div class="q">“Feels like we doubled our team”<br><small>— Marketing Lead</small></div>
       </div>
     </section>
 
