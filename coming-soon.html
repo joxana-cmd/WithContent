@@ -10,6 +10,9 @@
   <link rel="icon" type="image/png" href="WClogo_light.png" media="(prefers-color-scheme: light)">
   <link rel="icon" type="image/png" href="WClogo_dark.png"  media="(prefers-color-scheme: dark)">
 
+  <!-- Poppins font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
     :root{
       --bg:#F9DDDC;
@@ -27,7 +30,7 @@
       margin:0;
       min-height:100%;
       display:flex; flex-direction:column; align-items:center;
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      font-family:'Poppins', sans-serif;
       color:var(--text);
       background:var(--bg);
       text-align:center;
@@ -38,17 +41,19 @@
     main{padding:0 16px 48px; max-width:var(--wrap)}
     h1{
       font-size:clamp(34px,7vw,56px);
-      line-height:1.05;
-      margin:22px 0 42px; /* 🔹 More space under H1 */
+      line-height:1.1;
+      margin:22px 0 42px; /* breathing room under H1 */
+      font-weight:700;
     }
     .desc{
       color:var(--muted);
       font-size:clamp(18px,3.6vw,20px);
-      margin:6px 0 40px; /* 🔹 More space under description */
+      margin:6px 0 40px; /* breathing room under description */
     }
     h2{
       letter-spacing:2px;
       margin:20px 0 16px;
+      font-weight:600;
     }
     .cta{
       display:inline-block;
@@ -61,13 +66,13 @@
       box-shadow:var(--shadow);
       transition:background .25s ease, transform .12s ease;
       font-size:16px;
-      margin-top:20px; /* 🔹 breathing room above button */
+      margin-top:20px;
     }
     .cta:hover{background:var(--brand-dark)}
     .cta:active{transform:translateY(1px)}
     footer{
       margin-top:auto;
-      padding:40px 16px; /* 🔹 more footer padding */
+      padding:40px 16px;
       color:var(--muted);
       font-size:14px;
     }
