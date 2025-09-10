@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Join the WithContent Waitlist</title>
-  <meta name="description" content="Sign up for early access to WithContent — the AI-powered content workflow platform that takes you from brief to CMS draft, without the chaos." />
+  <title>Be content with your content — Waitlist | WithContent</title>
+  <meta name="description" content="The missing bridge between briefs, clients, and CMS publishing. Sign up for early access to WithContent." />
 
   <!-- Favicons -->
   <link rel="icon" type="image/png" href="WClogo_light.png" media="(prefers-color-scheme: light)">
@@ -50,14 +50,19 @@
       font-size:clamp(18px,3.6vw,20px);
       margin:6px 0 30px;
     }
-    iframe{
-      width:100%;
-      max-width:700px;
-      height:900px;
-      border:none;
+    .form-card{
+      max-width:720px;
+      margin:0 auto;
       background:#fff;
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
+      border-radius:16px;
+      box-shadow:0 8px 24px rgba(0,0,0,0.08);
+      padding:20px;
+    }
+    .form-card iframe{
+      width:100%;
+      height:800px;
+      border:none;
+      border-radius:12px;
     }
     .cta-secondary{
       display:inline-block;
@@ -96,13 +101,15 @@
   </header>
 
   <main>
-    <h1>🌿 Join the WithContent Waitlist</h1>
-    <p class="desc">Be among the first to shape the future of AI-powered content workflows.</p>
+    <h1>BE CONTENT<br>WITH YOUR CONTENT.</h1>
+    <p class="desc">The missing bridge between briefs, clients, and CMS publishing.</p>
 
-    <!-- Google Form Embed -->
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScV-Xk1Jb94JRIP9TvFYw3nDd6ucwFtgpUx64Z5PIrphjJLKw/viewform?embedded=true">
-      Loading…
-    </iframe>
+    <!-- Prettier Styled Embed -->
+    <div class="form-card">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScV-Xk1Jb94JRIP9TvFYw3nDd6ucwFtgpUx64Z5PIrphjJLKw/viewform?embedded=true">
+        Loading…
+      </iframe>
+    </div>
 
     <p>
       <a href="index.html" class="cta-secondary">← Back to Main Page</a>
