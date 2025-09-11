@@ -1,10 +1,11 @@
+Here's the code:
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WithContent — The content workflow built for tomorrow’s SEO</title>
-  <meta name="description" content="WithContent is the missing bridge between briefs, clients, and CMS publishing. Save 5+ hours per article and get future-ready with AI Overviews (GEO), AEO checks, and community-driven SEO insights." />
+  <title>WithContent — Not another AI writer. Not another PM tool.</title>
+  <meta name="description" content="WithContent is the missing bridge between briefs, clients, and CMS publishing. Save 5+ hours per article from brief to CMS draft in one click." />
 
   <!-- Favicons -->
   <link rel="icon" type="image/png" href="WClogo_light.png" media="(prefers-color-scheme: light)">
@@ -16,12 +17,12 @@
   <style>
     :root{
       --bg:#ffffff;
-      --panel:#F9DDDC;        /* Warm Pale Pink */
-      --brand:#5A8371;        /* Primary Green-Grey */
+      --panel:#F9DDDC;
+      --brand:#5A8371;
       --brand-dark:#466559;
       --text:#111827;
       --muted:#4B4F56;
-      --chip:#E8F0EC;         /* Soft leaf tint */
+      --chip:#E8F0EC;
       --chip-active:#D7E4DD;
       --radius:12px;
       --shadow:0 8px 24px rgba(16,24,40,.08);
@@ -43,16 +44,11 @@
 
     .hero{text-align:center; margin-bottom:48px;}
     h1{
-      margin:10px 0 14px;
+      margin:10px 0 42px;
       line-height:1.1;
       font-size:clamp(32px,5.6vw,56px);
       letter-spacing:-0.01em;
       font-weight:700;
-    }
-    .sub{
-      font-size:clamp(16px,2.1vw,20px);
-      color:var(--muted);
-      margin:0 0 28px;
     }
     .lead{
       background:var(--panel);
@@ -91,7 +87,7 @@
     }
 
     .features{display:grid; gap:28px; margin:0 auto 24px; max-width:1000px; grid-template-columns:1fr;}
-    @media (min-width:900px){.features{grid-template-columns:repeat(4,1fr)}}
+    @media (min-width:900px){.features{grid-template-columns:repeat(3,1fr)}}
     .feature{display:grid; grid-template-columns:44px 1fr; gap:14px; align-items:flex-start;}
     .bullet{width:44px; height:44px; border-radius:50%; display:grid; place-items:center; background:var(--chip); font-size:20px;}
     .feature b{display:block; margin-bottom:6px; font-size:18px;}
@@ -115,7 +111,13 @@
       background:var(--chip-active);
       border:2px solid var(--brand);
     }
-    .arrow { width:20px; height:20px; stroke:var(--muted); stroke-width:2.5; flex-shrink:0; }
+    .arrow {
+      width:20px;
+      height:20px;
+      stroke:var(--muted);
+      stroke-width:2.5;
+      flex-shrink:0;
+    }
 
     .panel{
       background:var(--panel);
@@ -130,12 +132,14 @@
     .q{background:#fff; border-radius:10px; padding:20px; font-size:18px;}
     .q small{color:var(--muted)}
 
-    ul{margin:20px auto 0; max-width:760px; font-size:18px; list-style-position:inside; text-align:center;}
+    ul{
+      margin:20px auto 0;
+      max-width:760px;
+      font-size:18px;
+      list-style-position:inside;
+      text-align:center;
+    }
     li{margin:10px 0;}
-
-    .list {max-width:900px; margin:0 auto; font-size:18px; color:var(--text);}
-    .list li {margin:10px 0; line-height:1.5;}
-    .muted {color:var(--muted);}
 
     footer{margin-top:64px; text-align:center; color:var(--muted); font-size:14px;}
     footer a{color:var(--brand); text-decoration:none}
@@ -159,26 +163,23 @@
     <!-- Hero -->
     <section class="hero">
       <h1>Not another AI writer.<br>Not another PM tool.</h1>
-      <p class="sub">The content workflow built for tomorrow’s SEO.</p>
       <p class="lead">
         Stop wasting hours copy-pasting drafts into WordPress or chasing approvals in email chains.
-        WithContent takes you from brief to CMS in one click — <b>saving 5+ hours per article</b>.
-        <br><b>Future-ready: built for AI Overviews and community-driven SEO.</b>
+        WithContent takes you from brief to CMS in one click. <br><b>Save 5+ hours per article.</b>
       </p>
       <p><a class="cta" href="coming-soon.html">Join the waitlist</a></p>
     </section>
 
-    <!-- Pipeline / Core features -->
+    <!-- Pipeline -->
     <section class="section">
       <div class="h2">One Tool, Full Pipeline</div>
       <div class="features">
         <div class="feature"><div class="bullet">⚡</div><div><b>AI-powered workflow</b><div>Smart briefs and drafts tailored to your strategy</div></div></div>
         <div class="feature"><div class="bullet">👥</div><div><b>Built for teams</b><div>Smooth collaboration between marketers, writers, and clients</div></div></div>
         <div class="feature"><div class="bullet">✅</div><div><b>Publish-ready</b><div>Push approved drafts straight into WordPress</div></div></div>
-        <div class="feature"><div class="bullet">🌍</div><div><b>Future-proof SEO</b><div>AEO & Generative Search readiness + Reddit/Quora trend insights</div></div></div>
       </div>
 
-      <div class="pipeline" aria-label="Content pipeline">
+      <div class="pipeline">
         <span class="chip">Keyword</span>
         <svg class="arrow" viewBox="0 0 24 24" fill="none"><path d="M8 4l8 8-8 8" /></svg>
         <span class="chip active">Draft</span>
@@ -199,26 +200,12 @@
       </div>
     </section>
 
-    <!-- New: Future-ready SEO block -->
-    <section class="section">
-      <div class="h2">Ready for the new era of search</div>
-      <ul class="list">
-        <li><b>AI Overview Readiness Score</b> — scan a draft and see if it’s structured for generative search (GEO).</li>
-        <li><b>Answer Engine Optimization (AEO) checks</b> — ensure clear answers, FAQs, and conversational structure.</li>
-        <li><b>Auto-suggest FAQs & schema markup</b> during drafting for richer snippets and better parsing.</li>
-        <li><b>E-E-A-T highlights</b> — surface missing expertise, experience, authoritativeness, and trust signals.</li>
-        <li><b>Community-driven SEO</b> — trend listening from Reddit/Quora to spot topics before they hit keyword tools.</li>
-      </ul>
-      <p class="muted" style="text-align:center; margin-top:16px;">Shipped progressively — available in pilot as we roll out.</p>
-    </section>
-
     <!-- Who for -->
     <section class="section">
       <div class="h2">Who is it for?</div>
       <ul>
         <li><b>Agencies</b> tired of juggling docs, emails and tools</li>
         <li><b>Startups</b> who need content ops without the overhead</li>
-        <li><b>Marketers</b> preparing for the future of search (AEO + GEO)</li>
       </ul>
       <p style="text-align:center; margin-top:24px">
         <a class="cta" href="coming-soon.html">Get early access</a>
