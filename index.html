@@ -110,6 +110,31 @@
     .bullet{width:44px; height:44px; border-radius:50%; display:grid; place-items:center; background:var(--chip); font-size:20px;}
     .feature b{display:block; margin-bottom:6px; font-size:18px;}
 
+    /* ---- FIX: Override layout ONLY for the Future-ready block ---- */
+    .feature.future{ 
+      /* cancel the two-column grid used by .feature */
+      display:block; 
+      text-align:center;
+    }
+    .feature.future .row{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+    }
+    .feature.future .desc{
+      margin-top:6px;
+      max-width:520px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    @media (min-width:900px){
+      .feature.future{
+        grid-column:1 / -1;   /* span full width of the features grid */
+        justify-self:center;
+      }
+    }
+    /* ------------------------------------------------------------- */
+
     .pipeline {
       display:flex;
       gap:10px;
@@ -203,6 +228,15 @@
         <div class="feature">
           <div class="bullet">✅</div>
           <div><b>Publish-ready</b><div>Push approved drafts straight into WordPress, Shopify, and more</div></div>
+        </div>
+
+        <!-- Future-ready feature: icon + title inline, clean description below -->
+        <div class="feature future">
+          <div class="row">
+            <span class="bullet">🌍</span>
+            <b>Future-ready SEO</b>
+          </div>
+          <div class="desc">Structured for AI search, with insights from real conversations</div>
         </div>
       </div>
 
